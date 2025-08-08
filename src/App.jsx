@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter , RouterProvider } from "react-router-dom";
 import "./App.css";
 import About from "./Components/About/About";
 import Layout from "./Components/Layout/Layout";
@@ -8,7 +8,7 @@ import Contact from "./Components/Contact/Contact";
 import Portfolio from "./Components/Portfolio/Portfolio";
 
 export default function App() {
-    let routes = createBrowserRouter([
+    let routes = createHashRouter ([
         {
             path: "",
             element: <Layout />,
